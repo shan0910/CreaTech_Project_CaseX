@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Calculated</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="invoice">
+      <h1>INVOICE</h1>
+      <br>
+      <div >
+        <span class="consignment1" style="text-decoration:underline">Order Number : 539101</span>
+        <span class="consignment2" style="text-decoration:underline"> Date of Order : 23/01/2024</span>
+      </div>
+      <br>
+      <div >
+        <span class="source1" style="text-decoration:underline">Source Location : xxx</span>
+        <span class="source2" style="text-decoration:underline"> Delivery Location : xxx</span>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <p>The cost effective product selected (Cement)</p>
+         
+        <hr>
+        <br>
+      <div>
+        <span class="company-cost1"> Company Name Cost per quantity</span>
+       
+        <span class="company-cost2"> Rs. xxx</span>
+      </div>
+      <br>
+      <div>
+        <span class="excise-duty1"> Excise Duty is x%</span>
+
+        <span class="excise-duty2"> Rs. xxx</span>
+      </div>
+<br>
+      <div>
+        <span class="delivery-cost1">Delivery Charges Depends on distance</span>
+
+        <span class="delivery-cost2"> y*x = Rs. xxx</span>
+      </div>
+      <br>
+
+      <div class="geotagging">
+        <h1 class="geotagging-heading" style="text-decoration: underline;">Geotagging</h1>
+        <br>
+        
+        
+        <i id="map-icon" class="fa fa-map-marker" style="font-size:48px"></i><br><br><br>
+
+       <hr class="location-lines">
+       <div>
+        <div>
+        <span class="source"> Source</span>
+        <span class="timing"> Timing</span>
+        <span class="delivery">Delivery</span>
+     
+    </div>
+      </div>
+      <br>
+      <button class="order">Place Your order</button>
+      <br>
+      <br>
+    </div>
+
+    <style>
+
+
+
+
+      body {
+        background-image: url(wallpaper3.jpg);
+        background-size: cover;
+      }
+
+      .invoice {
+        text-align: center;
+        width: 35%;
+        height: 595px;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 11px;
+        display: block;
+        opacity: 0.7;
+        padding: 7px 21px 7px 21px;
+        margin: 51px 473px 51px 473px ;
+        
+      }
+
+      h1 {
+        text-align: center;
+      }
+    
+
+      span.consignment1 {
+        float: left;
+        display: inline;
+      }
+      span.consignment2 {
+        float: right;
+        display: inline;
+      }
+
+      span.source1 {
+        float: left;
+        display: inline;
+      }
+      span.source2 {
+        float: right;
+        display: inline;
+      }
+
+      span.company-cost1 {
+        float: left;
+        display: inline;
+      }
+      span.company-cost2 {
+        float: right;
+        display: inline;
+      }
+
+
+      span.excise-duty1 {
+        float: left;
+        display: inline;
+      }
+
+      span.excise-duty2 {
+        float: right;
+        display: inline;
+      }
+
+      span.delivery-cost1 {
+        float: left;
+        display: inline;
+      }
+
+      span.delivery-cost2 {
+        float: right;
+        display: inline;
+      }
+
+
+      
+.geotagging{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 25px;
+    
+}
+
+.geotagging-heading{
+    text-align: center;
+    align-items: center;
+}
+
+hr.location-lines {
+  border: 10px solid rgb(13, 247, 13);
+  border-radius: 5px;
+}
+
+#map-icon{
+    float: left;
+}
+
+.source{
+    float: left;
+        display: inline;
+}
+.timing{
+    float: center;
+        display: inline;
+}
+.delivery{
+    float: right;
+        display: inline;
+}
+
+
+
+
+.order{
+    padding: 7px;
+   background-color: rgb(0, 0, 0);
+   color: rgb(253, 3, 3);
+   font-size: 1.5rem;
+   font-weight: bold;
+   border-radius: 11px;
+   
+}
+
+.order:hover{
+   background-color: rgb(10, 10, 10);
+   color: rgb(227, 227, 227);
+   
+}
+
+
+
+    </style>
+  </body>
+</html>

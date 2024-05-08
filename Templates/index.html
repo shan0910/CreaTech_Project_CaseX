@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effective Cost</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body>
+
+
+
+    <div class="main"> 
+			<marquee class="marq" ;
+      behavior=scroll 	direction="left" loop="2" scrollamount="2"> 
+				<div class="geek1"> 
+					This model is represented by case_x
+				</div> 	
+			</marquee> 
+		</div> 
+
+
+    <div class="container">
+      <div class="optionBox">
+        <h1 class="sourceHeading"> Sources</h1>
+        <button class="button" onclick="cement()">Cement</button>
+        <button class="button" onclick="steel()" >Steel</button>
+        <button class="button" id="pipes">Pipes</button>
+        <button class="button" id="tiles">Tiles</button>
+        <button class="button"id="valves">Valves</button>
+        
+        <footer>
+          <p style="text-align: center;margin-bottom: 7px; font-size: 1.5rem; font-weight: bold;">© Copyright Case_x</p>
+        </footer>
+      </div>
+     
+      <div class="formBox">
+        <!-- <div class="content"> -->
+        <div class="logo"> <img src="logo.png" class="logo-img" alt="logo"></div>
+          <div class="intro" id="introId">
+            <h1 class="intro-heading"><b>CreaTech Introducing</b></h1>
+            <hr>
+            <h2 class="intro-para">Cost effective Sourcing....</h2>
+            <hr>
+            <div class="main1">
+            <marquee class="marq1" ;
+      behavior=scroll 	direction="up" loop="" scrollamount="2"> 
+            <div class="para">
+              <p2>Cost-effective sourcing in a construction company involves strategic procurement practices aimed at minimizing expenses 
+                while maintaining quality standards. One approach is to establish long-term relationships with reliable suppliers, leveraging
+                 bulk purchasing power to negotiate favorable pricing. Additionally, embracing sustainable materials and technologies not only
+                  reduces environmental impact but can also lead to long-term cost savings through energy efficiency and durability.
+  
+                Furthermore, implementing Just-In-Time inventory 
+                management helps to reduce storage costs and waste by ordering materials precisely when needed.
+                 Utilizing digital platforms and e-procurement systems streamlines the sourcing process,
+                  enabling efficient comparison of prices and specifications across multiple suppliers.
+                
+                Moreover, investing in local sourcing whenever possible reduces
+                 transportation costs and supports the community. Regular review 
+                 and optimization of supply chains ensure ongoing cost efficiency, 
+                 with a focus on identifying areas for improvement and cost-saving opportunities.
+                
+                Overall, a comprehensive cost-effective sourcing strategy in
+                 construction involves a combination of supplier relationships,
+                  sustainable practices, technology adoption, and continuous optimization 
+                  to deliver quality results within budget constraints.</p2>
+            </div>
+            </marquee>
+          </div>
+          </div>
+        <!-- </div> -->
+
+        <!-- action="/action_page.php" -->
+        <div class="formpopup" id="cement">
+        <form  class="cement-form-container">
+          <h1 class="cement-heading">COST EFFECTIVE CEMENT</h1>
+          <hr>
+          <label for="company"><b>Brand</b></label>
+    <select  id="company" name="company" required="required">
+        <option class="optionValue" selected>----select option----</option>
+        <option class="optionValue" value="ACC">ACC</option>
+        <option class="optionValue" value="AMBUJA">AMBUJA</option>
+        <option class="optionValue" value="INDIA">INDIA</option>
+        <option class="optionValue" value="JAYPEE">JAYPEE</option>
+        <option class="optionValue" value="RAMCO">RAMCO</option>
+        <option class="optionValue" value="ORIENT">ORIENT</option>
+        <option class="optionValue" value="ULTRATECH">ULTRATECH</option>
+      </select>
+
+      
+
+
+      <label for="type of cement"><b>Type of Cement</b></label>
+      <select id="type of cement" name="type of cement" required="required">
+        <option class="optionValue" selected>----select option----</option>
+        <option class="optionValue" value="Portland Cement">Portland Cement</option>
+        <option class="optionValue" value="Expansive cement">Expansive cement</option>
+        <option class="optionValue" value="High Alumina Cement">High Alumina Cement</option>
+        <option class="optionValue" value="Hydrographic cement">Hydrographic cement</option>
+        <option class="optionValue" value="Low Heat Cement">Low Heat Cement</option>
+        <option class="optionValue" value="Blast Furnace slag Cement">Blast Furnance slag Cement</option>
+        <option class="optionValue" value="Air Entraining Cement">Air Entraining Cement</option>
+        <option class="optionValue" value="Sulfates Resisting Cement">Sulfates Resisting Cement</option>
+        <option class="optionValue" value="White CementColored Cement">White CementColored Cement</option>
+      </select>
+
+
+      <label for="location"><b>Location</b></label>
+      <select id="location" name="location" required="required">
+        <option   selected>----select option----</option>
+        <option class="optionValue" value="Jamshedpur">Jamshedpur</option>
+        <option class="optionValue" value="Guwahati">Guwahati</option>
+        <option class="optionValue" value="Bhilai">Bhilai</option>
+        <option class="optionValue" value="Delhi">Delhi</option>
+        <option class="optionValue" value="Jaipur">Jaipur</option>
+        <option class="optionValue" value="Lucknow">Lucknow</option>
+        <option class="optionValue" value="Chennai">Chennai</option>
+        <option class="optionValue" value="Vishakapatnam">Vishakapatnam</option>
+        <option class="optionValue" value="Pune">Pune</option>
+        <option class="optionValue" value="Bhopal">Bhopal</option>
+      </select>
+
+      <label for="delivery"><b>Delivery Point</b></label>
+      <input type="text" placeholder="Delivery Point"name="delivery" required="required" >
+
+
+
+      <label for="quality"><b>Quality</b></label>
+      <input type="number" placeholder="Quality"name="quality" required="required" >
+
+      <label for="market cost"><b>Market cost</b></label>
+      <input type="number" placeholder="Market cost"name="market_cost" required="required" >
+
+      <label for="quality"><b>Petrol Price</b></label>
+      <input type="number" placeholder="Petrol Price"name="petrol_price" required="required" >
+        
+      </select>
+
+      <label for="season of purchase"><b>Season of Purchase</b></label>
+      <select   id="season of purchase" name="season of purchase" required="required">
+        <option class="optionValue" selected>----select option----</option>
+        <option class="optionValue" value="Summer">Summer</option>
+        <option class="optionValue" value="Rainy">Rainy</option>
+        <option class="optionValue" value="Winter">Winter</option>
+        
+      </select>
+
+
+          <button class="btn" onclick="invoicebtn()" id="btn1">Calculate Total Cost</button>
+          
+        </form>
+      </div>
+ 
+        
+   
+    <div id="invoice" class="invoice1" >
+      <div class="invoice-temp">
+        <button class="box-close" onclick="invoiceOff()"> x </button>
+    
+  
+      <h1>INVOICE</h1>
+      <br>
+      
+      <div class="consignment">
+        <span style="float: left;"><span class="consignment1" >Order Number: &nbsp </span>
+        <span style="float: inline-start ;" class="orderNumber3" ><p class="orderNumber4" id="orderNumber"></p></span>
+      </span>
+        <span class="consignment2" style="text-decoration:underline"> Date of Order : 24/03/2024</span>
+      </div>
+      <br>
+      <div  >
+        <span class="source1" style="text-decoration:underline">Source Location : Jamshedpur</span>
+        <span class="source2" style="text-decoration:underline"> Delivery Location : Mumbai</span>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <p class="cement-para">The cost effective product selected is <b>Cement</b></p>
+         
+        <hr>
+        
+      <div class="cement-des">
+        <span class="company-cost1"> Cost per quantity is </span> 
+        <span style="float: right;" class="orderNumber1" ><p class="orderNumber2" id="cementCost"></p></span>
+       
+        <span class="company-cost2"> Rs.&nbsp </span>
+      </div>
+      
+      <br>
+      <div class="cement-des">
+        <span class="excise-duty1"> Excise Duty is  &nbsp</span> 
+      </span> <span class="excise-duty2">&nbsp %</span> 
+          <span style= "float: right;" class="orderNumber1" ><p class="orderNumber2" id="ExciseDuty1"></p></span>
+
+         
+       
+      </div>
+<br>
+
+      <div class="cement-des">
+        <span class="delivery-cost1">Delivery Charges Depends on distance</span>
+
+        <span class="delivery-cost2"> Rs. 35/Km </span>
+      </div>
+      <br>
+
+      <div class="geotagging">
+        <h1 class="geotagging-heading" style="text-decoration: underline;">Geotagging</h1>
+        <br>
+        
+        
+        <i id="map-icon" class="fa fa-map-marker" style="font-size:48px"></i><br><br><br>
+
+       <hr class="location-lines">
+       <div>
+        <div class="source-timing">
+        <span class="source"> Jamshedpur</span>
+        <span class="timing"> Expected delivery 7-14 days</span>
+        <span class="delivery">Mumbai</span>
+     
+    </div>
+      </div>
+      <br>
+      <button class="order">Place Your order</button>
+      <br>
+      <br>
+    </div>
+    </div>
+  
+    
+    <style>
+
+body {
+  background-image: url(wallpaper1.jpg);
+  background-size: cover;
+        
+      }
+
+      .sourceHeading{
+        text-align: center;
+        font-size: 2rem;
+        background-color: black;
+        color: white;
+        border-radius: 11px;
+        padding: 7px;
+        margin-left: 26%;
+        margin-right: 16%;
+      }
+
+      .container {
+       /* background-image: url(wallpaper3.jpg); */
+        display: flex;
+      }
+      .optionBox {
+        width: 50%;
+        height: 675px;
+        /* background-color: rgb(240, 236, 231); */
+        border-color: rgb(63, 63, 71);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 25px;
+        padding-right: 70px;
+        border-radius: 21px;
+        
+      }
+        
+      .logo{
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 55px;
+        margin-right: 55px;
+        border: 7px;
+        border-radius: 11px;
+        text-align: center;
+        padding: 7px;
+        background-color: black;
+      }
+    .logo-img{
+      border-radius: 7px;
+    }
+      .intro{
+        margin-top: 11px;
+        margin-bottom: 80px;
+        margin-left: 55px;
+        margin-right: 55px;
+        border: 7px;
+        border-color: black;
+        border-radius: 11px;
+        text-align: center;
+        text-align: justify;
+      }
+
+      .intro-heading{
+        text-align: center;
+        font-size: 2rem;
+      }
+      h2{
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .para{
+        text-indent: 32%;
+        margin: 11px 21px 11px 21px;
+      font-size: 21px;
+
+      }
+
+      .formBox {
+        width: 50%;
+        height: 675px;
+        /* background-color: rgb(234, 238, 244); */
+        border-color: rgb(93, 93, 98);
+        padding: 55pxpx;
+        border-radius: 21px;
+      }
+
+      .button{
+        width: 50%;
+        height: 51px;
+        padding-top:11px;
+        padding-bottom: 11px;
+        /* background-color: rgb(215, 222, 228); */
+        border-radius: 21px;
+        display: block;
+        cursor: pointer;
+        margin: 66px;
+        margin: 45px 66px 45px 198px;
+        font-size: larger;
+        font-size: 1.5rem;
+        
+        
+      }
+      .button:hover{
+        color: white;
+        background-color: black;
+        cursor: auto;
+
+      }
+
+
+
+      .main { 
+            text-align: center; 
+            border-radius: 7px;
+        } 
+  
+        .marq { 
+            padding-top: 0px; 
+            padding-bottom: 0px; 
+			/* background-color: #302626; */
+        } 
+        .main1{ 
+            padding-top: 0px; 
+            padding-bottom: 0px; 
+			   height: 440px;
+         text-align: justify;
+         
+        } 
+        .marq1 { 
+          height: 521px;
+            padding-top: 0px; 
+            padding-bottom: 0px;
+            text-align: justify; 
+			
+        } 
+  
+        .geek1 { 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: rgb(53, 5, 175); 
+            padding-bottom: 5px; 
+            /* background-color: #302626; */
+        } 
+
+      
+.formpopup {
+  width: 768px;
+  height: 582px;
+  display: none;
+  align-items: center;
+   position: absolute;
+  overflow: auto;
+  z-index: 9;
+  border-color: rgb(63, 63, 71);
+  border-radius: 21px;
+  background-image: url(wallpaper4.jpg);
+  
+}
+
+.cement-form-container {
+  max-width: 501px;
+  height: 575px;
+  border-radius: 20px;
+  padding: 1px;
+  /* background-color:white; */
+  margin-top:1px ;
+  margin-bottom: 1px;
+  margin-left: 134px;
+  margin-right: 134px;
+  
+}
+.cement-heading{
+  font-size: larger;
+  font-display: bold;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  /* background-color: whitesmoke; */
+  border-radius: 7px;
+  
+}
+label{
+  border-radius: 35px;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 7px;
+  margin: 7px;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+select{
+    width: 97%;
+    padding: 1px;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 5px 5px 11px 5px;
+  border: none;
+  display: block;
+  background: whitesmoke;
+  border-radius: 35px;
+  color: rgb(74, 80, 147);
+  text-align: center;
+  
+}
+
+.optionValue{
+  width: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 5px 0px 11px 0px;
+  border: none;
+  display: block;
+  background: whitesmoke;
+  border-radius: 35px;
+  color: rgb(74, 80, 147);
+  text-align: center;
+  
+  /* border-color: whitesmoke; */
+}
+
+select:hover{
+  background-color:black;
+  color:red;
+}
+
+
+
+
+input[type=number]{
+    width: 99%;
+    padding: 5px;
+    margin: 5px 0px 11px 0px;
+    display: block;
+    border: none;
+    border-radius: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    font-size: 1.5rem;
+    color:black ;
+}
+
+input[type=text]{
+    width: 99%;
+    padding: 5px;
+    margin: 5px 0px 11px 0px;
+    display: block;
+    border: none;
+    border-radius: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    font-size: 1.5rem;
+    color:black ;
+}
+
+
+
+.btn{
+  background-color: #0b573b;
+  color: white;
+  padding: 7px 7px;
+  border: none;
+  cursor: pointer;
+  width: 63%;
+  margin-top: 1px;
+  margin-bottom:10px;
+  margin-left: 19%;
+  margin-right: 21%;
+  opacity: 0.8;
+  border-radius: 7px;
+  font-size: 1.5rem;
+}
+.btn:hover{
+  background-color: black;
+  color: red;
+}
+
+
+
+
+
+      /* body {
+        background-image: url(wallpaper3.jpg);
+        background-size: cover;
+      } */
+
+      .invoice1 {
+        /* align-items: center;
+        width: 100%;
+        height: 595px;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 11px;
+        display: none;
+        opacity: 0.7;
+        padding: 7px 21px 7px 21px;
+        margin: 51px 473px 51px 473px ;
+        visibility: hidden;
+        background-image: url(wallpaper3.jpg);
+        background-size: cover; */
+
+
+ width: 100%;
+ height: 100%;
+ top: 0%;
+ left:0%;
+
+  display: none;
+  align-items: center;
+   position: absolute;
+  overflow: auto;
+  z-index: 9;
+  padding: 7px 21px 7px 21px;
+  border-radius: 11px;
+  background-image: url(wallpaper3.jpg);
+  background-size: cover;
+        
+      }
+
+      .invoice-temp{
+        width: 35%;
+        height: 595px;
+        padding: 7px 21px 7px 21px;
+        margin: 51px 473px 51px 473px ;
+       color: black;
+        border-radius: 11px;
+        background-color: aliceblue;
+      }
+
+     
+
+      .box-close {
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            align-items: center;
+            right: 15px;
+            color: #fe0606;
+            text-decoration: none;
+            font-size: 30px;
+            border-color:black;
+            border: 3px;
+            padding: 2px;
+            font-size: 1.5rem;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        .box-close:hover{
+          background-color: black;
+          color: white;
+        }
+
+        
+
+      h1 {
+        text-align: center;
+      }
+     
+      .consignment{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      span.consignment1 {
+        float: left;
+        display: inline;
+      
+      }
+      span.consignment2 {
+        float: right;
+        display: inline;
+      }
+
+         span.orderNmber1{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+          }
+
+          .orderNumber2{
+            margin: 0;
+            margin: 0;
+            padding: 0;
+          }
+
+          span.orderNmber3{
+           width: 25px;
+            padding: 0;
+            margin: 0;
+            display: inline;
+          }
+
+          .orderNumber4{
+            margin: 0;
+            margin: 0;
+            padding: 0;
+          }
+      span.source1 {
+        float: left;
+        display: inline;
+      }
+      span.source2 {
+        float: right;
+        display: inline;
+      }
+
+
+      .cement-des{
+        padding-bottom: 7px;
+      }
+      span.company-cost1 {
+        float: left;
+        display: inline;
+      }
+      span.company-cost2 {
+        float: right;
+        display: inline;
+      }
+
+
+      .cement-para{
+        text-align: center;
+        justify-items: center;
+      }
+
+      span.excise-duty1 {
+        float: left;
+        display: inline;
+      }
+
+      span.excise-duty2 {
+        float: right;
+        display: inline;
+      }
+
+      span.delivery-cost1 {
+        float: left;
+        display: inline;
+      }
+
+      span.delivery-cost2 {
+        float: right;
+        display: inline;
+      }
+
+
+      
+.geotagging{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 25px;
+   
+    
+}
+
+.geotagging-heading{
+    text-align: center;
+    align-items: center;
+}
+
+hr.location-lines {
+  border: 10px solid rgb(13, 247, 13);
+  border-radius: 5px;
+}
+
+#map-icon{
+    float: left;
+}
+
+.source{
+    float: left;
+        display: inline;
+}
+.timing{
+    float: center;
+        display: inline;
+        text-align: center;
+}
+.source-timing{
+  text-align: center;
+  justify-content: center;
+}
+.delivery{
+    float: right;
+        display: inline;
+}
+
+
+
+
+.order{
+    padding: 7px;
+   background-color: rgb(0, 0, 0);
+   color: rgb(253, 3, 3);
+   font-size: 1.5rem;
+   font-weight: bold;
+   border-radius: 11px;
+   align-items: center;
+   margin-left: 28%;
+   
+}
+
+.order:hover{
+   background-color: rgb(10, 10, 10);
+   color: rgb(227, 227, 227);
+   
+}
+
+
+
+    </style>
+
+    
+
+
+<script>
+  
+
+  function cement() {
+      document.getElementById("cement").style.display = "block";
+      
+    }
+
+    function invoicebtn() {
+      document.getElementById("invoice").style.display = "block";
+      
+    }
+
+    function invoiceOff(){
+      document.getElementById("invoice").style.display = "none";
+      
+    }
+
+
+    function steel() {
+      document.getElementById("introId").style.display = "none";
+    }
+
+    document.getElementById("orderNumber").innerHTML =
+Math.floor(Math.random() * 700) + 24599;
+
+document.getElementById("cementCost").innerHTML =
+Math.floor(Math.random() * 40 + 320);
+
+document.getElementById("ExciseDuty1").innerHTML =
+Math.floor(Math.random() * 11 + 20);
+   
+    
+
+      </script>
+
+
+
+  </body>
+</html>
